@@ -1,0 +1,35 @@
+.sideBar{
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+    position:fixed;
+    top:55px;
+    left:0;
+    bottom:0;
+    width:72px;
+    z-index:1100;
+    padding-top:5px;
+    flex-shrink:0;
+}
+
+.sideBarButton{
+    height:74px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:background-color 0.2s;
+}
+
+.sideBarButton:hover{
+    background-color: lightgray;
+}
+
+.sideBarButtonImg{
+    width:24px;
+}
+
+.sideBarButtonName{
+    font-size:10px;
+}
