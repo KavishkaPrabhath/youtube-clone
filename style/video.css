@@ -1,11 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-}
 
-p{
-    font-family:roboto;
-}
 
 .grid{
     display:grid;
@@ -30,6 +23,7 @@ p{
 .video_bottom_section{
     display:flex;
     flex-direction:row;
+    align-items:start;
     margin-top:12px;
 }
 
