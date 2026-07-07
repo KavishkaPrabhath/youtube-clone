@@ -67,19 +67,27 @@
     font-size:17px;
 }
 
-.searchSectin{
+.searchSection{
     width:65px;
     height:39px;
     margin-left:16px;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
     border:solid;
     border-width:1px;
     border-color:rgb(204, 204, 204);
-    background-color:rgba(247, 247, 247);    
+    background-color:rgba(247, 247, 247);
+    position:relative;
+    cursor:pointer;
 }
 
-.searchSectin img{
+.searchSection:hover{
+    background-color:rgb(235, 234, 234);
+}
+
+.searchSection img{
     width:25px;
     
 }
@@ -88,10 +96,14 @@
     width:39px;
     height:39px;
     display:flex;
+    flex-direction:column;
+    align-items:center;
     justify-content:center;
     border-radius:20px;
     margin-left:8px;
     background-color:rgb(247, 247, 247);
+    position:relative;
+    cursor:pointer;
 }
 
 .voiceSearchSection img{
@@ -110,6 +122,11 @@
 
 .addVideoSection{
     width:26px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    cursor:pointer;
 }
 
 .addVideoSection img{
@@ -118,6 +135,11 @@
 
 .ytAppSection{
     width:26px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    cursor:pointer;
 
 }
 
@@ -127,7 +149,11 @@
 
 .notificationSection{
     width:26px;
-    
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    cursor:pointer;
 }
 
 .notificationSection img{
@@ -146,5 +172,38 @@
     object-fit:cover;
     object-position:center;
     border-radius:50%;
+    cursor:pointer;
+}
+
+.notificationCount{
+    color:white;
+    background-color:rgba(204, 0, 0);
+    padding:1px 4px;
+    font-size:11px;
+    border-radius:10px;
+    border:solid;
+    border-width:1px;
+    position:absolute;
+    top:0;
+    right:-4px;
+
+}
+
+.headerTooltip{
+    position:absolute;
+    top:60px;
+    color:white;
+    background-color:rgb(96, 95, 95);
+    font-size:13px;
+    padding:7px 10px;
+    border-radius:2px;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 0.2s;
+    white-space:nowrap;
+}
+
+.searchSection:hover .headerTooltip,.voiceSearchSection:hover .headerTooltip,.notificationSection:hover .headerTooltip,.ytAppSection:hover .headerTooltip,.addVideoSection:hover .headerTooltip{
+    opacity:0.9;
 }
 
