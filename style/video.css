@@ -127,3 +127,21 @@
     padding:3px 4px;
     font-size:13px;
 }
+
+@media (max-width:1125px){
+    .grid{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:870px){
+    .grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:550px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
